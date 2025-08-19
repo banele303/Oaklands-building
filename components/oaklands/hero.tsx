@@ -117,9 +117,9 @@ export function OaklandsHero() {
             <Image
               src="/Oakland-logo.png"
               alt="Oakland Building"
-              width={200}
-              height={80}
-              className="w-32 h-auto md:w-40"
+              width={280}
+              height={112}
+              className="w-44 h-auto md:w-56"
             />
           </div>
           

@@ -89,9 +89,9 @@ export function OaklandsHeader() {
             <Image
               src="/Oakland-logo.png"
               alt="Oakland Building"
-              width={120}
-              height={40}
-              className="h-8 w-auto md:h-10"
+              width={168}
+              height={56}
+              className="h-11 w-auto md:h-14"
               priority
             />
           </Link>
