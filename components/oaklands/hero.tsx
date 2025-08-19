@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { hero } from "./content"
 import Link from "next/link"
+import Image from "next/image"
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react"
 
 const backgroundImages = [
@@ -111,6 +112,17 @@ export function OaklandsHero() {
       {/* Hero Content */}
       <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center text-white pt-20 sm:pt-24 pb-24 sm:pb-32">
         <div className="animate-fadeIn">
+          {/* Company Logo */}
+          <div className="mb-8 flex justify-center">
+            <Image
+              src="/Oakland-logo.png"
+              alt="Oakland Building"
+              width={200}
+              height={80}
+              className="w-32 h-auto md:w-40"
+            />
+          </div>
+          
           <p className="text-xs sm:text-sm uppercase tracking-widest text-cyan-300 font-medium mb-4 animate-slideInUp">
             {hero.eyebrow}
           </p>

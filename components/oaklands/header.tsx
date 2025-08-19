@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone, Mail, MapPin, ChevronDown } from "lucide-react"
 import { site } from "./content"
@@ -85,13 +86,14 @@ export function OaklandsHeader() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link href="/oaklands" className="flex items-center space-x-2 sm:space-x-3 group">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-              <span className="text-white font-bold text-lg sm:text-xl">O</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-bold text-gray-900 leading-none">Oaklands</span>
-              <span className="text-xs sm:text-sm font-medium text-blue-600 leading-none">Building</span>
-            </div>
+            <Image
+              src="/Oakland-logo.png"
+              alt="Oakland Building"
+              width={120}
+              height={40}
+              className="h-8 w-auto md:h-10"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
